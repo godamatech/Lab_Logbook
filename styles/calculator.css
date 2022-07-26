@@ -1,0 +1,27 @@
+body{
+    background-color: blue;
+    margin-top: 10%;
+}
+.body{
+    display: flex;
+   justify-content: center;
+}
+.main{
+    padding: 5px;
+    background-color: blueviolet;
+    width: 220px;
+    
+}
+button{
+    width: 65px;
+    height: 60px;
+    background-color: beige;
+    border: 3px solid rebeccapurple;
+}
+input{
+    padding: 15PX;
+    margin: 5px;
+}
+div{
+    margin: 5PX;
+}

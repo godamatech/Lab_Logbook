@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netnaija-Header</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="images/netnaija-icon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <img src="images/netnaija-menu.png" alt="menu" class="netnaija-menu">
+            <img src="images/netnaija-logo.png" alt="menu" class="netnaija-logo">
+        </div>
+        <div class="header-right">
+            <a href="#" class="header-right-li">Post</a>
+            <a href="#" class="header-right-li">Videos</a>
+            <a href="#" class="header-right-li">Music</a>
+            <a href="#" class="header-right-li">Contact</a>
+            <a href="#" class="header-right-li">About</a>    
+            
+        </div>
+        <img src="images/netnaija-search.png" alt="search-bar" class="header-right-search-bar">
+    </div>
+    <br>
+    <div class="body">
+        <h1 class="p-1"> Introduction </h1>
+        <p class="p-2">
+        
+        This book is a hands-on Xamarin.Forms primer and a cross-platform reference for building native Android,
+        iOS, and Windows Phone apps using C# and .NET.
+        If you think of the Xamarin platform as a pyramid with Xamarin.Android and Xamarin.iOS at its base and
+        Xamarin.Forms on top, that’s what this book covers with C#. Mobile UI makes up the lion’s share of the
+        pyramid, and this book explores the important concepts, elements, and recipes using Xamarin layouts,
+        controls, and lists.
+        The burning question in many new Xamarin projects is this: is Xamarin.Forms right for my project?
+        This book covers the salient considerations in the comparison of the Xamarin.Forms option vs. a
+        platform-specific approach with Xamarin.Android or Xamarin.iOS.
+        When you’ve reached the limits of what Xamarin.Forms can do out of the box, you’ll want to customize your
+        Xamarin.Forms controls by using custom renderers to leverage platform-specific features.
+        You’ll also learn all of the key Xamarin UI navigation patterns: hierarchical and modal, drill-down lists, tabs,
+        navigation drawer, and others. You can use the provided navigation code to build out the skeleton of just
+        about any business app.
+        This book is a guide to SQLite data access. We’ll cover the most common ways to access a SQLite database in
+        a Xamarin app and how to build a data access layer (DAL). Once you have a database set up, you’ll want to
+        bind your data to your UI. You can do this by hand or use Xamarin.Forms data binding to bind UI elements
+        to data sources. We’ll cover many techniques for read and write data binding to both data models and to
+        view models for a Model-View-ViewModel (MVVM) architecture.
+        Building an app requires more than a UI and data access; you’ll also need to organize your code into a
+        professional-grade architecture. We’ll explore solution-building techniques from starter to enterprise to help
+        you decouple your functional layers, manage your platform-specific code, and share your cross-platform
+        classes for optimal code reuse, testability, and maintainability.
+        Who This Book Is For
+        If you’re a developer, architect, or technical manager who can read C# examples to learn about
+        cross-platform mobile development using the Xamarin platform, then this book is for you. C# developers
+        will probably be most at home with this book because that’s what I am, but I’ve made an effort to point out
+        when Microsoft or .NET lingo is in use. The Xamarin platform has a way of bringing technologists from
+        different backgrounds together.
+        www.it-ebooks.info
+        ■ Introduction
+        xxxii
+        How to Download Code Examples
+        All of the code for this book, the C# and Extensible Application Markup Language (XAML) solutions, can be
+        found in two places online:
+        Apress web page for this book, on the Source Code/Downloads tab (www.apress.com/9781484202159)
+        GitHub at https://github.com/danhermes/xamarin-book-examples
+        XAML
+        This book was written in the same way that the Xamarin platform is built, code-first in C#, so all of the book
+        examples are in C#. All of the C# UI examples were ported to XAML as well, and made available in the
+        downloadable code. Look for the XAML boxes for tips on where to find them.
+        XAML The XAML version of this example can be found at the Apress web site (www.apress.com), or on GitHub
+        at https://github.com/danhermes/xamarin-book-examples. The Xamarin.Forms solution for this chapter is
+        ThisChapterSolution.Xaml.
+        The hardest decision I made in writing this book was not including XAML examples in the book proper.
+        Including XAML would have meant doing away with much or all of the material on Xamarin.Android and
+        Xamarin.iOS, topics that are indispensible for a complete understanding of the Xamarin platform. I chose to
+        adhere to my mission for this book: cross-platform C# code-first coverage of the foundations of the Xamarin
+        platform. That said, I understand that there is a strong need for good XAML documentation and examples.
+        So although I wish that there had been enough time and room to include XAML examples in the text of the
+        book, I’m proud to say that we were able to provide downloadable XAML equivalents for all of the C# UI
+        examples.
+        Get Started with Xamarin.Forms Right Now!
+        No time for reading? Browse Chapter 2 for ten minutes, and then download the navigation code for Chapter 6.
+        Rip off some of my Chapter 6 navigation patterns to use immediately in your app and get started coding
+        right now. Leave the book open to Chapter 3 so you can build some layouts inside your navigation pages.
+        Good luck!
+        Chapter Contents
+        All of the chapters in this book are cross-platform, weighted in favor of Xamarin.Forms. The UI chapters
+        (Chapters 3–6) are written with Xamarin.Forms, Xamarin.Android, and Xamarin.iOS elements side by side
+        in a mini-index at the beginning of the chapter to facilitate understanding of concepts across platforms, and
+        to make it easier to consider custom renderers when you need them. The first part of those UI chapters is
+        Xamarin.Forms, the second part is Xamarin.Android, and the third is Xamarin.iOS.
+        Chapter 1—Mobile Development Using Xamarin
+        An introduction to the Xamarin platform covering all the key topics in this book.
+        www.it-ebooks.info
+        ■ Introduction
+        xxxiii
+        Chapter 2—Building Mobile User Interfaces (Xamarin.Forms Intro)
+        A Xamarin.Forms primer and a comparison of Xamarin.Forms vs. platform-specific approaches, such as
+        Xamarin.iOS and Xamarin.Android. Covers Xamarin.Forms pages, layouts, and views.
+        Chapter 3—UI Design Using Layouts
+        Layouts help us organize the positioning and formatting of controls, allowing us to structure and design the
+        screens of our mobile app.
+        Chapter 4—User Interaction Using Controls (Views)
+        Pickers, sliders, switches, and other mobile UI controls facilitate user interaction and data entry that is
+        unique to the mobile user interface and differs from the PC/mouse interface, largely because of the use of
+        gestures.
+        Chapter 5—Making a Scrollable List
+        Lists are one of the simplest and most powerful methods of data display and selection in mobile apps.
+        Chapter 6—Navigation
+        Navigation lets a user traverse an app, move from screen to screen, and access features. Hierarchical, modal,
+        navigation drawers, drill-down lists, and other key patterns make up the core of mobile UI navigation. State
+        management is the handling of data passed between screens as the user navigates through the app.
+        Chapter 7—Data Access with SQLite and Data Binding
+        SQLite is the database of choice for many Xamarin developers. Store and retrieve data locally by using
+        SQLite.NET or ADO.NET. Using Xamarin.Forms data binding, fuse UI elements to your data models. Use the
+        MVVM pattern by binding to a view model.
+        Chapter 8—Custom Renderers
+        Extend the stock Xamarin.Forms controls and take advantage of platform-specific UI feature sets while
+        maintaining a cross-platform approach using custom renderers.
+        Chapter 9—Cross-platform Architecture
+        Architect your cross-platform application by managing platform-specific code. Project-level options in
+        Xamarin include Portable Class Libraries (PCLs) and shared projects. Cross-platform coding techniques
+        include conditional compilation, dependency injection (DI), and file linking.
+        How to Read This Book
+        This book covers quite a breadth of material, and there are a few ways to approach it. Here are the main
+        navigation paths built into this book and how to use them. If you are interested in
+        • Cross-platform Development: Xamarin.Forms, Xamarin.Android, and Xamarin.iOS
+        Read the book from cover to cover. Every word in this book was written for you. After
+        you read Chapters 1 and 2, peruse the first few pages of Chapters 3–6 to understand
+        the UI material covered in the book.
+        • Xamarin.Forms
+        Read Chapters 1 and 2, and then read the first third of Chapters 3–6, which covers
+        Xamarin.Forms UI. Then read Chapters 7, 8, and 9 for data access, custom renderers,
+        and architecture.
+        www.it-ebooks.info
+        ■ Introduction
+        xxxiv
+        • Xamarin.Android
+        First, make sure you are up to speed on Android basics. See “Prerequisites” later
+        in this Introduction. Then read Chapter 1 and the first half of Chapter 2. Read the
+        middle section of Chapters 3–6, which covers the Android UI. Then read Chapters 7
+        and 9 for data access and architecture.
+        • Xamarin.iOS
+        First, make sure you are up to speed on iOS basics. See “Prerequisites” later in this
+        Introduction. Then read Chapter 1 and the first half of Chapter 2. Read the end
+        section of Chapters 3–6, which covers the iOS UI. Then read Chapters 7 and 9 for data
+        access and architecture.
+        • General Reference
+        Read Chapter 1 and the first half of Chapter 2 to get oriented. Then peruse the
+        first few pages of Chapters 3–6 to understand the UI material covered in the book
+        and how it is organized. Use the beginning of each of these UI chapters as a crossreference.
+        So many paths to pick from. This is a choose-your-own-adventure book.
+        CODE COMPLETE
+        There is a “Cliff’s Notes” navigation path through this book too. If you just want the bottom line on a topic,
+        find the section you’re interested in and jump right to the CODE COMPLETE section. This is a complete code
+        listing at the end of many (but not all) major topics. Many times all we want is a quick code recipe on a topic,
+        and that’s how to get it here in this book. If you need explanation about the code, turn back to the beginning
+        of the section and step through the detailed construction of that code.
+        What Platform Am I Reading About Now?
+        Stay oriented while reading about different platforms by using the platform headings beneath major topic
+        headings. Here’s what the headings look like:
+        xamarin.forms
+        This heading denotes Xamarin.Forms topics.
+        android
+        This heading denotes Xamarin.Android topics.
+        ios
+        This heading denotes Xamarin.iOS topics.
+        windows phone
+        This heading denotes Xamarin.Forms Windows Phone topics.
+        www.it-ebooks.info
+        ■ Introduction
+        xxxv
+        cross-platform
+        this heading denotes topics that are useful for Xamarin.Forms, Xamarin.iOS, and Xamarin.Android.
+        Look for the platform headings beneath the major topic headings and you’ll always know what platform
+        you’re reading about.
+        Prerequisites
+        If you’re mainly using Xamarin.Forms, you should be able to pick up this book without much else in the
+        way of background, besides some C#. However, if you want to get serious about using Xamarin.Android,
+        Xamarin.iOS, or Xamarin.Forms custom renderers, please note the following:
+        This is not an Android 101 primer. Although it provides some introduction to key
+        topics and then moves on to “202” material, you’ll need to consult other sources
+        for mastery of Android and Xamarin.Android fundamentals. Consult a
+        Xamarin.Android primer on topics such as the following:
+        • Creating a Xamarin.Android solution using Xamarin Studio or Visual Studio
+        • Xamarin Designer for Android
+        • Activities, XML layouts, and views
+        • The activity life cycle
+        • The basic UI controls: TextView, EditText, Button, and ImageView
+        • Fragments
+        • Images and screen sizes
+        • Local resources
+        • Gestures
+        This book is not an iOS 101 primer. Although it provides some introduction to key
+        topics and then moves on to “202” material, you’ll need to consult other sources
+        for mastery of iOS and Xamarin.iOS fundamentals. Consult a Xamarin.iOS primer
+        on topics such as the following:
+        • Creating a Xamarin.iOS solution using Xamarin Studio or Visual Studio
+        • Xcode Interface Builder or Xamarin Designer for iOS
+        • Storyboards and segues
+        • UIView and UIViewController
+        • The basic UI controls: UILabel, UITextField, UIButton, and UIImageView
+        • Images and screen sizes
+        • Local resources
+        • Gestures
+        www.it-ebooks.info
+        ■ Introduction
+        xxxvi
+        What’s Not In This Book
+        The Xamarin platform is a monumental project, spanning technologies and APIs of several operating
+        systems. Writing about all of it in enough detail to be useful would require not hundreds but thousands
+        of pages, which means that not everything could be addressed in one book. There is no coverage of the
+        following:
+        • Extensible Application Markup Language (XAML) for Xamarin.Forms in the book
+        proper, but there are complete, downloadable XAML code examples.
+        • Integrated development environments (IDEs) including Visual Studio and Xamarin
+        Studio.
+        • UI Designer tools including Xcode Interface Builder, Xamarin Designer for iOS, and
+        Xamarin Designer for Android.
+        • Some introductory Xamarin.Android topics (see “Prerequisites”)
+        • Some introductory Xamarin.iOS topics (see “Prerequisites”)
+        Windows Phone
+        Xamarin.Forms apps will run on Windows Phone. Windows Phone projects can be built to support
+        Silverlight or WinRT. This book was written for Windows Phone Silverlight implementations, but much of
+        what is written here applies to WinRT as well (and some WinRT differences are pointed out).
+        System Requirements
+        Whether you’re developing on a Mac or Windows workstation, you will need to download and run the
+        Xamarin unified installer at http://xamarin.com/download. This will allow you to install and configure the
+        Xamarin platform including the Xamarin Android SDK, Xamarin iOS SDK, Xamarin Studio, and Xamarin’s
+        plug-in for Visual Studio, as appropriate.
+        Here are the OS and software requirements for Xamarin development.
+        Mac
+        </p>
+        <p id="buttom-paragraph"> These requirements must be met to build Xamarin apps on a Mac.</p>
+        <ul>
+            <ii>Xamarin Studio 5+ is required to use Xamarin.Forms on OS X.</ii>
+            <ii>To develop iOS apps:</ii>
+            <ii>Latest Xcode version</ii>
+            <ii>Mac OS X 10.9.3+ (Mavericks) or 10.10+</ii>
+            <ii>Windows Phone apps cannot be developed on a Mac.</ii>
+        </ul>
+
+    </div>
+    
+    <div class="float">
+        <a href="#buttom-paragraph"> 
+            <img src="images/arrow-button.png" alt="arrow-button" class="float-img">
+        </a>
+    </div>
+    
+</body>
+</html>
